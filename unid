@@ -285,8 +285,8 @@ repeat wait() until plr.Character
 local char = plr.Character
  
 local garbage = {
-    "ur bad";
-    ".gg/bum";
+    ".gg/bum on dis";
+    "Gaming Chair Made By Cosmic gg/bum";
    "Gaming Chair Made By Cosmic gg/bum";
 
  
