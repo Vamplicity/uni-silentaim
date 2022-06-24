@@ -104,9 +104,7 @@ end)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('Uni-Silent', 'Loading..', 5)
 NotifyLib.prompt('Uni-Silent', 'Loaded!', 5)
-NotifyLib.prompt('Uni-Silent', '$ Vamp#0001', 5)
 
 if getgenv().Aiming then return getgenv().Aiming end
 
