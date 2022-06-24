@@ -1,0 +1,377 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
+local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+NotifyLib.prompt('Uni-Hub', 'Loading..', 5)
+NotifyLib.prompt('Uni-Hub', 'Loaded!', 5)
+NotifyLib.prompt('Uni-Hub', '$ Vamp#0001', 5)
+
+
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
+
+
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "Uni-ScriptHub",
+  FolderToSave = "SolarisLibStuff"
+})
+
+local tab = win:Tab("Welcome!")
+
+
+local sec = tab:Section("Welcome To Uni-Hub Thank You For Purchasing Hope You Enjoy!")
+
+--win:Tab(title <string>)
+
+local tab = win:Tab("Aim-Tab")
+
+
+
+
+
+
+--tab:Section(title <string>)
+local sec = tab:Section("Uni-SilentAim")
+
+
+--sec:Button(title <string>, callback <function>)
+sec:Button("Inject-Uni", function()
+     local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vamplicity/uni-silentaim/main/Uni-Silent.txt"))()
+Aiming.TeamCheck(false)
+
+
+--[[
+toggle:Set(state <boolean>)
+]]
+sec:Textbox("Prediction", true, function(bool)
+    DaHoodSettings.Prediction = bool
+end)
+
+ 
+
+
+--sec:Slider(title <string>,default <number>,max <number>,minimum <number>,increment <number>, flag <string>, callback <function>)
+local slider = sec:Slider("Fov-Size", 0.1,50,2.5, 0.1,"Slider", function(bool)
+    Aiming.FOV = bool
+end)
+
+local sec = tab:Section("Uni-AimLock")
+
+--sec:Toggle(title <string>,default <boolean>, flag <string>, callback <function>)
+local toggle = sec:Toggle("AimLock (C)", false,"Toggle", function()
+
+    
+
+local tab = win:Tab("Teleports")
+
+
+local sec = tab:Section("Uni-Teleports")
+
+sec:Button("Double Barrel",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1039.59985, 18.8513641, -256.449951, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+sec:Button("Revolver",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-638.75, 18.8500004, -118.175011, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+sec:Button("Shotgun",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-578.623657, 5.47212696, -725.131531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+sec:Button("Tactical Shotgun",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(470.877533, 45.1272316, -620.630676, 0.999999821, 0.000604254019, -2.60802135e-08, -0.000604254019, 0.999999821, -8.63220048e-05, -2.60802135e-08, 8.63220048e-05, 1)
+end)
+
+sec:Button("Smg",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-577.123413, 5.47666788, -718.031433, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+sec:Button("RPG",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-794.814697, -42.5468521, -932.97998, 5.96046448e-08, 2.91038305e-11, 1, -0.000610388815, 0.999999821, 2.91038305e-11, -0.999999762, -0.000610388815, 5.96046448e-08)
+end)
+
+sec:Button("Armor",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-607.978455, 7.44964886, -788.494263, -1.1920929e-07, 0, 1.00000012, 0, 1, 0, -1.00000012, 0, -1.1920929e-07)
+end)
+
+sec:Button("PopCorn",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-995, 21.6998043, -153.100037, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+sec:Button("Bank",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402.123718, 21.75, -283.988617, 0.0159681588, -0.000121377925, -0.999872446, -2.60148026e-05, 1, -0.000121808866, 0.999872506, 2.79565484e-05, 0.0159681737)
+end)
+
+sec:Button("Main Food",function(value)
+    getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-338.352173, 23.6826477, -297.2146, -0.0060598203, -1.03402984e-08, -0.999981582, -1.61653102e-09, 1, -1.03306892e-08, 0.999981582, 1.55389912e-09, -0.0060598203)
+end)
+
+
+local tab = win:Tab("Extra")
+
+
+local sec = tab:Section("Uni-TrashTalk")
+
+
+sec:Button("Trash-Talk (J)",function(bool)
+    local plr = game.Players.LocalPlayer
+repeat wait() until plr.Character
+local char = plr.Character
+ 
+local garbage = {
+    "ur bad";
+    "sonney boy";
+    "ez";
+    ".gg/bum";
+    "seed";
+    "sit son";
+    "trash";
+    "LOL";
+    "LMAO";
+    "imagine being you right now";
+    ".gg/bum";
+    "don't try LOL";
+    "you lose";
+    "why do you even try";
+    "I didn't think being this bad was possible";
+    "leave";
+    "no skill";
+    "so sad man.";
+    "bad";
+    "you're nothing";
+    "lol";
+    ".gg/bum";
+    "so bad";
+    "ur salty";
+    "salty";
+    "look he's mad";
+    "cry more";
+    ".gg/bum";
+    "cry baby";
+    "hahaha I won";
+    "no one likes u";
+    ".gg/bum";
+    "thank you for your time";
+    "you were so close!";
+    "better luck next time!";
+    "rodent";
+    "HAHA";
+    ".gg/bum";
+    "just quit";
+    "time to take out the trash";
+    "did you get worse?";
+    "I'm surprised you haven't quit yet";
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+ 
+ 
+function TrashTalk(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.J and gameProcessedEvent == false then        
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+        garbage[math.random(1,#garbage)],
+        "All"
+    )
+    end
+end
+ 
+game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+end)
+
+local sec = tab:Section("Uni-FovSlider")
+
+local slider = sec:Slider("Fov-Camera", 40, 120, 80, 1,"Slider", function(text)
+    workspace.CurrentCamera.FieldOfView = (text)
+end)
+
+local sec = tab:Section("Uni-Macro")
+
+sec:Button("Realistic-Macro (X)",function(bool)
+    local Player = game:GetService("Players").LocalPlayer
+    local Mouse = Player:GetMouse()
+    local SpeedGlitch = false
+    local Wallet = Player.Backpack:FindFirstChild("Wallet")
+ 
+    local UniversalAnimation = Instance.new("Animation")
+ 
+    function stopTracks()
+        for _, v in next, game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):GetPlayingAnimationTracks() do
+            if (v.Animation.AnimationId:match("rbxassetid")) then
+                v:Stop()
+            end
+        end
+    end
+ 
+    function loadAnimation(id)
+        if UniversalAnimation.AnimationId == id then
+            stopTracks()
+            UniversalAnimation.AnimationId = "1"
+        else
+            UniversalAnimation.AnimationId = id
+            local animationTrack = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):LoadAnimation(UniversalAnimation)
+            animationTrack:Play()
+        end
+    end
+ 
+    Mouse.KeyDown:Connect(function(Key)
+        if Key == "x" then
+            SpeedGlitch = not SpeedGlitch
+            if SpeedGlitch == true then
+                stopTracks()
+                loadAnimation("rbxassetid://3189777795")
+                wait(1.5)
+                Wallet.Parent = Player.Character
+                wait(0.15)
+                Player.Character:FindFirstChild("Wallet").Parent = Player.Backpack
+                wait(0.05)
+                repeat game:GetService("RunService").Heartbeat:wait()
+                    keypress(0x49)
+                    game:GetService("RunService").Heartbeat:wait()
+                    keypress(0x4F)
+                    game:GetService("RunService").Heartbeat:wait()
+                    keyrelease(0x49)
+                    game:GetService("RunService").Heartbeat:wait()
+                    keyrelease(0x4F)
+                    game:GetService("RunService").Heartbeat:wait()
+                until SpeedGlitch == false
+            end
+        end
+    end)
+end)
+ 
+local sec = tab:Section("Uni-Fly")
+
+sec:Button("Fly (F)",function(bool)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Vamplicity/uni-silentaim/main/fly"))()
+end)
+
+local sec = tab:Section("Uni-Headless")
+
+sec:Button("Headless (Client-Sided)",function(bool)
+    getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+end)
+
+local sec = tab:Section("Uni-Korblox")
+
+sec:Button("Korblox Client Sided",function(bool)
+	local ply = game.Players.LocalPlayer
+	local chr = ply.Character
+	chr.RightLowerLeg.MeshId = "902942093"
+	chr.RightLowerLeg.Transparency = "1"
+	chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	chr.RightFoot.MeshId = "902942089"
+	chr.RightFoot.Transparency = "1"
+	end)
+end)
+
+local sec = tab:Section("Uni-Promote")
+
+sec:Button("Uni-Promote (G)",function(bool)
+    local plr = game.Players.LocalPlayer
+repeat wait() until plr.Character
+local char = plr.Character
+ 
+local garbage = {
+    "ur bad";
+    ".gg/bum";
+   "Gaming Chair Made By Cosmic gg/bum";
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+ 
+ 
+function TrashTalk(inputObject, gameProcessedEvent)
+    if inputObject.KeyCode == Enum.KeyCode.G and gameProcessedEvent == false then        
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+        garbage[math.random(1,#garbage)],
+        "All"
+    )
+    end
+end
+ 
+game:GetService("UserInputService").InputBegan:connect(TrashTalk)
+end)
+
+
+
+
+
+
+local Workspace = game:GetService("Workspace")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+
+local LocalPlayer = Players.LocalPlayer
+local mouse = game.Players.LocalPlayer:GetMouse()
+local CurrentCamera = Workspace.CurrentCamera
+
+local DaHoodSettings = {
+    SilentAim = true,
+    AimLock = true,
+    Prediction = 0.14377,
+    AimLockKeybind = Enum.KeyCode.C
+}
+getgenv().DaHoodSettings = DaHoodSettings
+
+function Aiming.Check()
+    if not (Aiming.Enabled == true and Aiming.Selected ~= LocalPlayer and Aiming.SelectedPart ~= nil) then
+        return false
+    end
+
+    local Character = Aiming.Character(Aiming.Selected)
+    local KOd = Character:WaitForChild("BodyEffects")["K.O"].Value
+    local Grabbed = Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
+
+    if (KOd or Grabbed) then
+        return false
+    end
+
+    return true
+end
+
+local __index
+__index = hookmetamethod(game, "__index", function(t, k)
+    if (t:IsA("Mouse") and (k == "Hit" or k == "Target") and Aiming.Check()) then
+        local SelectedPart = Aiming.SelectedPart
+
+        if (DaHoodSettings.SilentAim and (k == "Hit" or k == "Target")) then
+            local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
+
+            return (k == "Hit" and Hit or SelectedPart)
+        end
+    end
+
+    return __index(t, k)
+end)
+
+RunService:BindToRenderStep("AimLock", 0, function()
+    if (DaHoodSettings.AimLock and Aiming.Check() and UserInputService:IsKeyDown(DaHoodSettings.AimLockKeybind)) then
+        local SelectedPart = Aiming.SelectedPart
+
+        local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
+
+        CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
+    end
+end)
+end)
