@@ -4,14 +4,6 @@ NotifyLib.prompt('Uni-Hub', 'Loading..', 5)
 NotifyLib.prompt('Uni-Hub', 'Loaded!', 5)
 NotifyLib.prompt('Uni-Hub', '$ Vamp#0001', 5)
 
-local userids = loadstring(game:HttpGet("https://pastebin.com/raw/JzJaPeUY", true))()
-if userids[game.Players.LocalPlayer.UserId] then
---Whitelisted
-else
---Not whitelisted
-game.Players:WaitForChild("LocalPlayer"):Kick("Purchase This Script At Discord.gg/Bum")
-end
-
 local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
 
 
