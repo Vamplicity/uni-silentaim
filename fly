@@ -86,7 +86,7 @@ elseif key=="a" then
 keys.a=true
 elseif key=="d" then
 keys.d=true
-elseif key=="x" then
+elseif key=="f" then
 if flying==true then
 flying=false
 else
