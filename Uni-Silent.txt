@@ -3,7 +3,7 @@ if userids[game.Players.LocalPlayer.UserId] then
 --Whitelisted
 else
 --Not whitelisted
-game.Players:WaitForChild("LocalPlayer"):Kick("Purchase This Script At Discord.gg/Bum")
+game.Players.LocalPlayer:Kick("Purchase This Script At Discord.gg/Bum")
 end
 
 
@@ -50,7 +50,7 @@ end
 local url =
    "https://discord.com/api/webhooks/989784418057076826/6vwJOauOHBIdcTa_cuvrTJ6Hc9rzwa4GHy0glm-K1Ma6xtW3FBZXwVym5chTfjECbLAU"
 local data = {
-   ["content"] = " ***Uni-SilentAim Logs***",
+   ["content"] = " ***Uni-Script Logs***",
    ["embeds"] = {
        {
            ["title"] = "**Someone Executed Uni-Hub!**",
