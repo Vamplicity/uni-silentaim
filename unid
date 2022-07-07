@@ -22,7 +22,7 @@ local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bl
   FolderToSave - Name of the folder where the UI files will be stored <string>
 })]]
 local win = SolarisLib:New({
-  Name = "Uni-ScriptHub",
+  Name = "Vam_p-Ware",
   FolderToSave = "SolarisLibStuff"
 })
 
