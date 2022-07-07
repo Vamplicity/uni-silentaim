@@ -12,7 +12,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhon
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
 NotifyLib.prompt('Uni-Hub', 'Loading..', 5)
 NotifyLib.prompt('Uni-Hub', 'Loaded!', 5)
-NotifyLib.prompt('Uni-Hub', '$ Vamp#0001', 5)
+NotifyLib.prompt('Uni-Hub', 'Vam_p#0001', 5)
 
 local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
 
@@ -22,7 +22,7 @@ local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bl
   FolderToSave - Name of the folder where the UI files will be stored <string>
 })]]
 local win = SolarisLib:New({
-  Name = "Vam_p-Ware",
+  Name = "Vam_p-Ware Made By Vam_p#0001",
   FolderToSave = "SolarisLibStuff"
 })
 
