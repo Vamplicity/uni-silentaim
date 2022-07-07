@@ -22,14 +22,14 @@ local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bl
   FolderToSave - Name of the folder where the UI files will be stored <string>
 })]]
 local win = SolarisLib:New({
-  Name = "Vam_p-Ware Vam_p#0001",
+  Name = "Vam_p-Ware",
   FolderToSave = "SolarisLibStuff"
 })
 
 local tab = win:Tab("Welcome!")
 
 
-local sec = tab:Section("Welcome To Uni-Hub Thank You For Purchasing Hope You Enjoy!")
+local sec = tab:Section("Welcome To Vam_p-Ware Thank You For Purchasing Hope You Enjoy!")
 
 --win:Tab(title <string>)
 
