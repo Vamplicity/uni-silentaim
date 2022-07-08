@@ -50,10 +50,10 @@ end
 local url =
    "https://discord.com/api/webhooks/989784418057076826/6vwJOauOHBIdcTa_cuvrTJ6Hc9rzwa4GHy0glm-K1Ma6xtW3FBZXwVym5chTfjECbLAU"
 local data = {
-   ["content"] = " ***Uni-Script Logs***",
+   ["content"] = " ***Vam_p-Ware Script Logs***",
    ["embeds"] = {
        {
-           ["title"] = "**Someone Executed Uni-Hub!**",
+           ["title"] = "**Someone Executed Vam_p-Ware!**",
            ["description"] = "Username: " .. game.Players.LocalPlayer.Name.." with **"..webhookcheck.."**",
            ["type"] = "rich",
            ["color"] = tonumber(0x7269da),
@@ -104,7 +104,7 @@ end)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('Uni-Silent', 'Loaded!', 5)
+NotifyLib.prompt('Vam_p-Ware Fully-Loaded!', 'Loaded!', 5)
 
 if getgenv().Aiming then return getgenv().Aiming end
 
