@@ -10,9 +10,9 @@ end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('Uni-Hub', 'Loading..', 5)
-NotifyLib.prompt('Uni-Hub', 'Loaded!', 5)
-NotifyLib.prompt('Uni-Hub', 'Vam_p#0001', 5)
+NotifyLib.prompt('Vam_p-Ware', 'Loading..', 5)
+NotifyLib.prompt('Vam_p-Ware', 'Loaded!', 5)
+NotifyLib.prompt('Vam_p-Ware', 'Vam_p#0001', 5)
 
 local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
 
@@ -41,11 +41,11 @@ local tab = win:Tab("Aim-Tab")
 
 
 --tab:Section(title <string>)
-local sec = tab:Section("Uni-SilentAim")
+local sec = tab:Section("SilentAim")
 
 
 --sec:Button(title <string>, callback <function>)
-sec:Button("Inject-Uni", function()
+sec:Button("Inject", function()
      local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vamplicity/uni-silentaim/main/Uni-Silent.txt"))()
 Aiming.TeamCheck(false)
 
@@ -65,7 +65,7 @@ local slider = sec:Slider("Fov-Size", 0.1,50,2.5, 0.1,"Slider", function(bool)
     Aiming.FOV = bool
 end)
 
-local sec = tab:Section("Uni-AimLock")
+local sec = tab:Section("AimLock")
 
 --sec:Toggle(title <string>,default <boolean>, flag <string>, callback <function>)
 local toggle = sec:Toggle("AimLock (C)", false,"Toggle", function()
@@ -75,7 +75,7 @@ local toggle = sec:Toggle("AimLock (C)", false,"Toggle", function()
 local tab = win:Tab("Teleports")
 
 
-local sec = tab:Section("Uni-Teleports")
+local sec = tab:Section("Teleports")
 
 sec:Button("Double Barrel",function(value)
     getgenv().game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1039.59985, 18.8513641, -256.449951, -1, 0, 0, 0, 1, 0, 0, 0, -1)
@@ -121,7 +121,7 @@ end)
 local tab = win:Tab("Extra")
 
 
-local sec = tab:Section("Uni-TrashTalk")
+local sec = tab:Section("TrashTalk")
 
 
 sec:Button("Trash-Talk (J)",function(bool)
@@ -198,13 +198,13 @@ end
 game:GetService("UserInputService").InputBegan:connect(TrashTalk)
 end)
 
-local sec = tab:Section("Uni-FovSlider")
+local sec = tab:Section("FovSlider")
 
 local slider = sec:Slider("Fov-Camera", 40, 120, 80, 1,"Slider", function(text)
     workspace.CurrentCamera.FieldOfView = (text)
 end)
 
-local sec = tab:Section("Uni-Macro")
+local sec = tab:Section("Macro")
 
 sec:Button("Realistic-Macro (X)",function(bool)
     local Player = game:GetService("Players").LocalPlayer
@@ -259,13 +259,13 @@ sec:Button("Realistic-Macro (X)",function(bool)
     end)
 end)
  
-local sec = tab:Section("Uni-Fly")
+local sec = tab:Section("Fly")
 
 sec:Button("Fly (F)",function(bool)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Vamplicity/uni-silentaim/main/fly"))()
 end)
 
-local sec = tab:Section("Uni-Headless")
+local sec = tab:Section("Headless")
 
 sec:Button("Headless (Client-Sided)",function(bool)
     getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
@@ -273,7 +273,7 @@ sec:Button("Headless (Client-Sided)",function(bool)
     getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
 end)
 
-local sec = tab:Section("Uni-Korblox")
+local sec = tab:Section("Korblox")
 
 sec:Button("Korblox Client Sided",function(bool)
 	local ply = game.Players.LocalPlayer
@@ -287,15 +287,15 @@ sec:Button("Korblox Client Sided",function(bool)
 	end)
 end)
 
-local sec = tab:Section("Uni-Promote")
+local sec = tab:Section("Promote")
 
-sec:Button("Uni-Promote (G)",function(bool)
+sec:Button("Promote (G)",function(bool)
     local plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
 local char = plr.Character
  
 local garbage = {
-    ".gg/bum on dis";
+    ".gg/bum on Discord";
     "Gaming Chair Made By Cosmic gg/bum";
    "Gaming Chair Made By Cosmic gg/bum";
 
