@@ -1,7 +1,5 @@
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
-local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('Vamp-Ware Fully-Loaded!', 'Loaded!', 5)
+
 
 if getgenv().Aiming then return getgenv().Aiming end
 
@@ -43,7 +41,7 @@ getgenv().Aiming = {
     Enabled = true,
 
     ShowFOV = false,
-    FOV = 9.4,
+    FOV = 7.7,
     FOVSides = 3.57,
     FOVColour = Color3fromRGB(255, 0, 0),
 
